@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #1c1c1c;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 2px;
+      }
+      header {
+        position: fixed;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* width: 90%; */
+        padding: 1em;
+        height: 10vh;
+        width: 100%;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+      }
+      li {
+        padding: 1em;
+        margin: 0.5em;
+        transition: 0.2s ease-in-out;
+      }
+      li:hover {
+        background-color: #22a2ff;
+      }
+      section {
+        min-height: 95vh;
+        /* background-color: #dedede2c; */
+        margin: 1em;
+      }
+      .intro {
+        line-height: 48px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .right {
+        width: 65%;
+        background: url("./test.svg") no-repeat;
+        background-position: center;
+        /* background-size: 48em; */
+        padding-bottom: 1270px;
+      }
+      .left {
+        /* width: 35%; */
+        height: 100%;
+        padding-left: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .sCon {
+        width: 100%;
+        height: 100%;
+      }
+      .intro_headings {
+        font-size: 48px;
+      }
+      .intro_heading_shadow {
+        text-shadow: 4px 0px 0px#22a2ff;
+        transition: 0.3s ease-in-out;
+      }
+      .intro_heading_shadow:hover {
+        color: #22a2ff;
+        text-shadow: 4px 0px 0px white;
+      }
+      .intro_heading {
+        /* margin: 0 2em; */
+      }
+      .intro_hook {
+        margin: 2em 0;
+        line-height: 28px;
+        font-size: 24px !important;
+      }
+      .intro_button {
+        height: 2.5em;
+        width: 70%;
+        background: #22a2ff;
+        box-shadow: 0em 0em 2em #22a2ff;
+        display: grid;
+        place-items: center;
+        transition: 0.3s ease-in-out;
+      }
+      .intro_button:hover {
+        background: white;
+        color: #22a2ff;
+        box-shadow: 0em 0em 7em #ffffff;
+        cursor: pointer;
+      }
+      .portfolio {
+        padding: 4em;
+      }
+      .portfolio_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 32px;
+        margin: 0 auto;
+      }
+      .portfolio_grid {
+        margin: 4em;
+        height: 100%;
+        width: 80%;
+        display: grid;
+        grid-template-rows: 500px 500px;
+        grid-template-columns: 1fr 1fr;
+      }
+      .portfolio_grid_item {
+        border: 1px solid #22a2ff;
+        box-shadow: 0 0 2em #22a2ff;
+        background: black;
+        height: 100%;
+        width: 100%;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .portfolio_grid_item:hover {
+        border: 1px solid #22a2ff;
+        box-shadow: 0 0 5em white;
+        /* background: #22a2ff; */
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+      }
+      .services_container {
+        font-size: 32px;
+        margin: 0 auto;
+        width: 80%;
+        height: 100%;
+      }
+    </style>
+    <header>
+      <div class="logo">LVNA</div>
+      <nav>
+        <ul>
+          <li>Работы</li>
+          <li>Услуги</li>
+          <li>Процесс</li>
+          <li>Заявка</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="intro">
+      <div class="left">
+        <div class="intro_headings">
+          <p class="intro_heading">
+            Меня зовут <span class="intro_heading_shadow">Luna</span>
+          </p>
+          <p class="intro_heading">и я дизайнер</p>
+        </div>
+        <div class="intro_hook">
+          <p class="intro_heading">Визитки</p>
+          <p class="intro_heading">Лэндинги</p>
+          <p class="intro_heading">Логотипы</p>
+        </div>
+        <div class="intro_button">Оставить заявку</div>
+      </div>
+      <div class="right"></div>
+    </section>
+    <section class="portfolio">
+      <img class="portfolio_heading" src="./pf.svg" width="400px" />
+      <div class="portfolio_container">
+        <div class="portfolio_grid">
+          <div class="portfolio_grid_item">
+            <p>Визитки</p>
+            <img src="./cards.svg" />
+          </div>
+          <div class="portfolio_grid_item">
+            <p>Лэндинги</p>
+            <img src="./landing.svg" />
+          </div>
+          <div class="portfolio_grid_item">
+            <p>Логотипы</p>
+            <img src="./logo.svg" />
+          </div>
+          <div class="portfolio_grid_item">
+            <p>Остальное</p>
+            <img src="./cards.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+        <img class="services_heading" src="./sv.svg" width="400px"/>
+    </section>
+    <section class="process">
+        <img class="process_heading" src="./pr.svg" width="400px"/>
+    </section>
+  </body>
+</html>
